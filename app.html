@@ -30,7 +30,8 @@
         //sql server database service address
         $vm.api_type="sqlserver"; 
         $vm.qid='91000127'; //permission control table
-        $VmAPI.api_base="https://cbs.wappsystem.com/dev/";
+        $VmAPI.api_base="https://rt.woolcock.org.au/pro/";
+        if(window.location.toString().indexOf('db=dev')!=-1) $VmAPI.api_base="https://cbs.wappsystem.com/dev/";
         //------------------------------------
         //list all your modules used in your application
         //Setup each module's Table (you can create your own tables in backoffice)
